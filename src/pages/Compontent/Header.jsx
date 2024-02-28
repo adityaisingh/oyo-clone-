@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Block from "./Block";
+import Link from "next/link";
 
 const Header = () => {
   return (
@@ -25,7 +26,9 @@ const Header = () => {
           height={100}
           className="h-10 w-10 rounded-full mr-2 "
         />
-        <button className="font-bold">Login/Signup</button>
+        <Link href={"/login"}>
+          <button className="font-bold">Login/Signup</button>
+        </Link>
       </div>
     </div>
   );
