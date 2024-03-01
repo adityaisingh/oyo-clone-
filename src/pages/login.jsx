@@ -27,19 +27,29 @@ const login = () => {
             </p>
           </div>
         </div>
-        <div className=" w-100 h-80  border border-red-500 ml-10 ">
+        <div className=" w-100 h-100  border border-red-500 ml-10  bg-white">
           <p className="h-10 font-bold text-white w-full flex items-center px-10 bg-gradient-to-r from-red-300 to bg-red-600 ">
             Sign up & Get ₹500 OYO Money
           </p>
           <div className="px-7">
             <p className="mt-3 text-3xl text-black text-bold">Login/Signup</p>
-            <p className="mt-5 text-bold text-3xl text-white">
+            <p className="mt-5 text-bold text-3xl">
               Please Enter Your Phone Number To Continue
             </p>
             <input
               type="email"
-              placeholder="Enter Your Email..."
-              className="mt-3 w-80 border-2 rounded text-2xl text-bold  border-gray-500 flex items-center"
+              placeholder="Enter Your Name"
+              className="mt-3 w-80 border-2 rounded text-l text-bold  border-gray-500 flex items-center"
+            />
+            <input
+              type="email"
+              placeholder="Enter Your Email"
+              className="mt-3 w-80 border-2 rounded text-l text-bold  border-gray-500 flex items-center"
+            />
+            <input
+              type="email"
+              placeholder="Enter Your Password"
+              className="mt-3 w-80 border-2 rounded text-l text-bold  border-gray-500 flex items-center"
             />
             <button className="mt-3 w-60 h-10 border-2 rounded border-gray-500 text-white bg-slate-500 hover:cursor-pointer hover:bg-red-500">
               Verify Email

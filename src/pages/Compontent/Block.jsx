@@ -8,6 +8,7 @@ const Block = ({ title, para }) => {
         src={"/fire.jpg"}
         width={100}
         height={100}
+        alt="fire"
         className="h-10 w-10 "
       />
       <div className="m-2">

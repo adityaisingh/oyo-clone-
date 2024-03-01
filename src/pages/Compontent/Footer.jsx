@@ -2,13 +2,9 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="h-15 py-5 flex justify-between border border-gray-300 bg-red-500">
-      <div className="font-bold text-3xl ">OYO</div>
-      <div className="font-bold text-3xl ">
-        World's leading chain of hotels and homes
-      </div>
-      <div className="font-bold text-3xl">
-        Join our network and grow your business!
+    <div className="h-15  border border-gray-300 bg-red-500">
+      <div className="text-white font-bold flex item-center justify-center py-2">
+        © 2024 The Company Check. All right reserved.
       </div>
     </div>
   );

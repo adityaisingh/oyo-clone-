@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const Banner = () => {
   return (
@@ -22,11 +23,13 @@ const Banner = () => {
           placeholder="1 ROOM , 1 GUEST"
           className=" h-16 outline-none px-3 text-2xl border-r-2 border-gray-300 col-span-2"
         />
-        <button
-          type="submit "
-          className=" h-16 w-40 px-2 py-3 text-bold text-3xl bg-green-400  hover:cursor-pointer  ">
-          Search
-        </button>
+        <Link href={"/hotels"}>
+          <button
+            type="submit "
+            className=" h-16 w-40 px-2 py-3 text-bold text-3xl bg-green-400  hover:cursor-pointer  ">
+            Search
+          </button>
+        </Link>
       </div>
     </div>
   );
