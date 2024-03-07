@@ -19,14 +19,23 @@ const index = () => {
       <Banner />
 
       <div className="my-10 px-10 ">
-        <Image src={"/oyo.avif"} alt={"banner"} width={1600} height={400} />
+        <Image
+          priority="true"
+          src={"/oyo.avif"}
+          alt={"banner"}
+          width={200}
+          height={200}
+          className="h-80 w-full "
+        />
       </div>
       <div className="my-10 px-10">
         <Image
+          priority="true"
           src={"/oyo image-2.avif"}
           alt={"banner2"}
-          width={1600}
+          width={200}
           height={200}
+          className="h-80 w-full "
         />
         <Header4 />
       </div>

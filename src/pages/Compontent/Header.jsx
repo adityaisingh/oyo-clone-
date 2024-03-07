@@ -1,9 +1,24 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import Block from "./Block";
 import Link from "next/link";
+import Cookies from "js-cookie";
+import { useRouter } from "next/router";
 
 const Header = () => {
+  let auth;
+  if (typeof Window !== "underfined") {
+    auth = Cookies.get("user");
+  }
+
+  const router = useRouter();
+
+  const handleLogout = () => {
+    Cookies.remove("user");
+
+    router.push("/");
+  };
   return (
     <div className="flex justify-between items-center  border-gray-300 h-20 px-9 ">
       <Image src={"/logo.png"} alt="logo" width={150} height={150} />
@@ -26,9 +41,15 @@ const Header = () => {
           height={100}
           className="h-10 w-10 rounded-full mr-2 "
         />
-        <Link href={"/login"}>
-          <button className="font-bold">Login/Signup</button>
-        </Link>
+        {auth ? (
+          <h3 className=" font-bold cursor-pointer" onClick={handleLogout}>
+            Logout
+          </h3>
+        ) : (
+          <Link href={"/login"} className=" font-bold">
+            Login / Signup
+          </Link>
+        )}
       </div>
     </div>
   );

@@ -1,7 +1,6 @@
 import mongoose from "mongoose";
 
-const URL =
-  "mongodb+srv://ishu9918663060:UA6emszGeho58LTn@cluster0.dnd6vc5.mongodb.net/";
+const URL = process.env.MONGO_URI;
 
 const connectDB = async () => {
   await mongoose

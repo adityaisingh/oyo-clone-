@@ -11,17 +11,7 @@ const Banner = () => {
         <input
           type="text"
           placeholder="Search by city...."
-          className=" h-16 outline-none px-3 text-2xl border-r-2 border-gray-300  col-span-3"
-        />
-        <input
-          type="text"
-          placeholder="Sat,24 feb - Mon,26feb"
-          className=" h-16 outline-none px-3  text-2xl border-r-2 border-gray-300 col-span-2"
-        />
-        <input
-          type="text"
-          placeholder="1 ROOM , 1 GUEST"
-          className=" h-16 outline-none px-3 text-2xl border-r-2 border-gray-300 col-span-2"
+          className=" h-16 w-100 outline-none px-3 text-2xl border-r-2 border-gray-300  "
         />
         <Link href={"/hotels"}>
           <button

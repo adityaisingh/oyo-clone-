@@ -69,41 +69,43 @@ const login = () => {
           </div>
         </div>
         <div className=" w-100 h-100  border border-red-500 ml-10  bg-white">
-          <p className="h-10 font-bold text-white w-full flex items-center px-10 bg-gradient-to-r from-red-300 to bg-red-600 ">
+          <p className="h-10 font-bold text-white w-full flex items-center px-10 bg-red-500 ">
             Sign up & Get ₹500 OYO Money
           </p>
           <div className="px-7">
             <p className="mt-3 text-3xl text-black text-bold">Login/Signup</p>
-            <p className="mt-5 text-bold text-3xl">
+            <p className="mt-5 text-bold text-2xl">
               Please Enter Your Phone Number To Continue
             </p>
-            {login ? (
-              ""
-            ) : (
+            <div className="">
+              {login ? (
+                ""
+              ) : (
+                <input
+                  type="text"
+                  placeholder="Enter Your Name"
+                  className="mt-3 w-80 border-2 p-2 rounded text-l text-bold  border-gray-500 flex items-center"
+                  onChange={(e) => setName(e.target.value)}
+                />
+              )}
               <input
-                type="text"
-                placeholder="Enter Your Name"
-                className="mt-3 w-80 border-2 rounded text-l text-bold  border-gray-500 flex items-center"
-                onChange={(e) => setName(e.target.value)}
+                type="email"
+                placeholder="Enter Your Email"
+                className="mt-3 w-80 border-2 p-2 rounded text-l text-bold  border-gray-500 flex items-center"
+                onChange={(e) => setEmail(e.target.value)}
               />
-            )}
-            <input
-              type="email"
-              placeholder="Enter Your Email"
-              className="mt-3 w-80 border-2 rounded text-l text-bold  border-gray-500 flex items-center"
-              onChange={(e) => setEmail(e.target.value)}
-            />
-            <input
-              type="password"
-              placeholder="Enter Your Password"
-              className="mt-3 w-80 border-2 rounded text-l text-bold  border-gray-500 flex items-center"
-              onChange={(e) => setPassword(e.target.value)}
-            />
-            <button
-              className="mt-3 w-60 h-10 border-2 rounded border-gray-500 text-white bg-slate-500 hover:cursor-pointer hover:bg-red-500"
-              onClick={login ? handlelogin : handlesignup}>
-              {login ? "login" : "Sign Up"}
-            </button>
+              <input
+                type="password"
+                placeholder="Enter Your Password"
+                className="mt-3 w-80 border-2 rounded text-l text-bold p-2 border-gray-500 flex items-center"
+                onChange={(e) => setPassword(e.target.value)}
+              />
+              <button
+                className="mt-3 w-60 h-10 border-2 rounded border-gray-500 text-white bg-slate-500 hover:cursor-pointer hover:bg-red-500"
+                onClick={login ? handlelogin : handlesignup}>
+                {login ? "login" : "Sign Up"}
+              </button>
+            </div>
             <div className="mt-3 hover:cursor-pointer">
               <span>
                 {login ? "Don't have an account ?" : "Already have account?"}
