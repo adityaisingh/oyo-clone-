@@ -7,11 +7,11 @@ const Banner = () => {
       <div className="flex justify-center font-bold py-10 text-3xl text-white text-bold">
         <h1>Over 174,000+ hotels and homes across 35+ countries</h1>
       </div>
-      <div className="flex justify-center  my-2 mx-10 ">
+      <div className="flex justify-center  my-2 mx-10  ">
         <input
           type="text"
           placeholder="Search by city...."
-          className=" h-16 w-100 outline-none px-3 text-2xl border-r-2 border-gray-300  "
+          className=" outline-none px-3 text-2xl border-r-2 border-gray-300  "
         />
         <Link href={"/hotels"}>
           <button

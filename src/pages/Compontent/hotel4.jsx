@@ -3,10 +3,10 @@ import Link from "next/link";
 
 const hotel = () => {
   return (
-    <div className=" w-full h-75 border  mt-5 rounded-l ">
+    <div className=" w-full h-75 border  mt-5 rounded-2 ">
       <div className="flex">
         <Image
-          src={"/hotel image.avif"}
+          src={"/hotel image 4.avif"}
           width={200}
           height={200}
           alt="hotelimg1"
@@ -14,28 +14,28 @@ const hotel = () => {
         />
         <div className=" grid grid-rows-3 my-3 pb-2">
           <Image
-            src={"/hotel image.avif"}
+            src={"/hotel image 3.avif"}
             width={200}
             height={200}
             alt="hotelimg2"
             className="w-20  "
           />
           <Image
-            src={"/hotel image.avif"}
+            src={"/hotel image 3.avif"}
             width={200}
             height={200}
             alt="hotelimg3"
             className="w-20  "
           />
           <Image
-            src={"/hotel image.avif"}
+            src={"/hotel image 3.avif"}
             width={200}
             height={200}
             alt="hotelimg4"
             className="w-20  "
           />
           <Image
-            src={"/hotel image.avif"}
+            src={"/hotel image 3.avif"}
             width={200}
             height={200}
             alt="hotelimg5"
@@ -44,10 +44,10 @@ const hotel = () => {
         </div>
         <div className="mx-10">
           <h2 className="font-bold line-clamp-1 text-3xl pt-5">
-            OYO Flagship Rk Plaza
+            OYO Hotel Crystal INN
           </h2>
           <p className="mt-5 text-justify text-xl ">
-            211 211 Block D2, Jivan Parknull, Delhi
+            OYO Hotel Crystal INNOYO Hotel Crystal INN
           </p>
           <p className="text-2xl my-5">
             <span className="font-bold ">Facilities :</span>
@@ -58,7 +58,7 @@ const hotel = () => {
           <Link href={"/payment"}>
             <button
               type="text"
-              className="w-60 h-10 text-center border bg-green-500 text-white font-bold rounded-lg hover:cursor-pointer">
+              className="w-60  h-10 text-center border bg-green-500 text-white font-bold rounded-lg hover:cursor-pointer">
               Book Now
             </button>
           </Link>

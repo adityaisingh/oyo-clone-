@@ -25,6 +25,7 @@ const Header = () => {
 
       <div className="flex ">
         <Block title={"Become a Member"} para={"Additional 10% off on stays"} />
+
         <Block title={"OYO for Business"} para={"Trusted by 5000 Corp."} />
         <Block
           title={"List your Property"}
